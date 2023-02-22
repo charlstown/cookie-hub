@@ -31,7 +31,7 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       primary: {{ cookiecutter.base_color }}
-      accent: {{ cookiecutter.base_color if cookiecutter.base_color == 'blue grey' else cookiecutter.base_color }}
+      accent: {{ 'teal' if cookiecutter.base_color == 'blue grey' else cookiecutter.base_color }}
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -39,7 +39,7 @@ theme:
     # Palette toggle for dark mode
     - scheme: slate
       primary: {{ cookiecutter.base_color }}
-      accent: {{ cookiecutter.base_color if cookiecutter.base_color == 'blue grey' else cookiecutter.base_color }}
+      accent: {{ 'teal' if cookiecutter.base_color == 'blue grey' else cookiecutter.base_color }}
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode

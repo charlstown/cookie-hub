@@ -25,7 +25,7 @@ This template includes all the essential features you need to create a website t
 
 <details><summary><b>Readme contents</b></summary>
 
-- [1. Description](#1-what-is-pytemplate)
+- [1. What is Site Template](#1-what-is-site-template)
 - [2. Installation](#2-Installation)
 - [3. Usage](#3-Usage)
 - [4. Troubleshooting](#4-Troubleshooting)
@@ -90,7 +90,7 @@ Visit the link to the cookiecutter documentation to learn more about the install
 [Install cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html#install-cookiecutter)
 
 
-## 2.2 PyTemplate installation
+## 2.2 Site Template installation
 
 To generate a custom project from the template, follow these steps:
 - 1. Navigate to the path where you desire to generate the project folder.

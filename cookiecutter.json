@@ -1,0 +1,15 @@
+{
+    "project_name": "My Cool Site",
+    "project_description": "A great place with awesome resources to start your journey. {{ cookiecutter.project_name }} has everything you need to boldly explore new frontiers and conquer the digital landscape.",
+    "author": "Obi-Wan Kenobi",
+    "github_user": "obikenobi",
+    "repository_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-') }}",
+    "package_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-').replace('-', '_') }}",
+    "repository_url": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.repository_name }}",
+    "maintainer": "{{ cookiecutter.author }}",
+    "license": ["MIT", "Apache 2.0", "GNU General Public License", "Corporate", "Custom"],
+    "company": "(Optional) Only if selected license is Corporate",
+    "version": "0.1.0",
+    "env_name": "{{ cookiecutter.repository_name }}",
+    "mkdocs_version": "1.4"
+}

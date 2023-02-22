@@ -2,14 +2,12 @@
 
 ## Release contributors
 
-- [Abel Santin Gonzalez](mailto: abel.santin@gruposantander.com)
-- [Álvaro Gamero Díaz](mailto: alvaro.gamero@gruposantander.com)
-- [Carlos Grande Núñez](mailto: carlos.grande@gruposantander.com)
+- {{ cookiecutter.author }}
 
 
 ## Version 0.1.0 (25/01/2023)
 
-This is the first documentation release of [Gluon Community Portal](https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-community-portal/) project.
+This is the first documentation release of {{ cookiecutter.project_name }} project.
 
 
 **Features**

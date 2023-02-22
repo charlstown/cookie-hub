@@ -80,10 +80,10 @@ extra_javascript:
   - assets/javascripts/extra.js
 
 # Copyright message
-copyright: Copyright &copy; Grupo Santander - Gluon 2023
+copyright: Copyright &copy; {{ cookiecutter.project_name}} - 2023
 
 # Global variables
 extra:
   links:
-    self-host: 'https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-community-portal/'
-    learning-host: 'https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-learning-portal/'
+    self-host: 'url'
+    learning-host: 'url'

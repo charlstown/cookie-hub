@@ -5,10 +5,8 @@
 <!-- Custom styles for the home site -->
 {% block styles %}
     {{ super() }}
-    {% raw %}
     <link rel="stylesheet" href="{{ base_url }}/{{ '/assets/stylesheets/home.css' | url }}" />
     <link rel="stylesheet" href="{{ base_url }}/{{ '/assets/stylesheets/particles.css' | url }}" />
-    {% endraw %}
 {% endblock %}
 
 
@@ -35,16 +33,14 @@
                 <img src="assets/images/background.png" draggable="false">
                 </div>
                 <div class="tx-hero__content">
-                <h1>Welcome to {{ cookiecutter.project_name }}</h1>
-                <p>Collaborate, learn, and discover {{ cookiecutter.project_name }}.</p>
-                {% raw %}
+                <h1>Welcome to {{ site_name }}</h1>
+                <p>Collaborate, learn, and discover {{ site_name }}.</p>
                 <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
                     Get started
                 </a>
                 <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
                     Join the community!
                 </a>
-                {% endraw %}
                 </div>
             </div>
         </div>

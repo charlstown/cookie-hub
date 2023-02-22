@@ -33,13 +33,13 @@
                 <img src="assets/images/background.png" draggable="false">
                 </div>
                 <div class="tx-hero__content">
-                <h1>Welcome to Gluon community</h1>
-                <p>Collaborate, learn, and discover Gluon with <b>Gluon Community</b> for developers and product builders!</p>
+                <h1>Welcome to {{ cookiecutter.project_name }}</h1>
+                <p>Collaborate, learn, and discover {{ cookiecutter.project_name }}.</p>
                 <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
                     Get started
                 </a>
                 <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
-                    Become a Gluoneer!
+                    Join the community!
                 </a>
                 </div>
             </div>

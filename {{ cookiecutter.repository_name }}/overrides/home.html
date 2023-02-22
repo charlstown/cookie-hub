@@ -5,8 +5,10 @@
 <!-- Custom styles for the home site -->
 {% block styles %}
     {{ super() }}
+    {% raw %}
     <link rel="stylesheet" href="{{ base_url }}/{{ '/assets/stylesheets/home.css' | url }}" />
     <link rel="stylesheet" href="{{ base_url }}/{{ '/assets/stylesheets/particles.css' | url }}" />
+    {% endraw %}
 {% endblock %}
 
 

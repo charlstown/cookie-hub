@@ -78,8 +78,6 @@
 
     By using the Software, you agree to be bound by the terms of this license. This license constitutes the entire agreement between the company and the user relating to the use of the Software and supersedes all prior or contemporaneous understandings, communications, and agreements, whether written or oral, relating to such subject matter.
 
-{% endif %}
-
 
 {%- elif cookiecutter.license == "Custom" -%}
     Choose a license at:

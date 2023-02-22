@@ -71,6 +71,7 @@ markdown_extensions:
 plugins:
   - search
   - markdownextradata
+
 # css
 extra_css:
   - assets/stylesheets/extra.css
@@ -80,7 +81,7 @@ extra_javascript:
   - assets/javascripts/extra.js
 
 # Copyright message
-copyright: Copyright &copy; {{ cookiecutter.project_name}} - 2023
+copyright: Copyright &copy; {{ cookiecutter.project_name}} - {% now 'utc', '%Y' %}
 
 # Global variables
 extra:

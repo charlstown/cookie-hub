@@ -25,13 +25,21 @@ This template includes all the essential features you need to create a website t
 
 <details><summary><b>Readme contents</b></summary>
 
-- [1. What is Site Template](#1-what-is-site-template)
-- [2. Installation](#2-Installation)
-- [3. Usage](#3-Usage)
-- [4. Troubleshooting](#4-Troubleshooting)
-- [5. Disclaimer](#5-Disclaimer)
-- [6. Help wanted](#6-Help-wanted)
-- [7. Other links](#7-Other-links)
+- [Site Template](#site-template)
+  - [1. What is Site Template](#1-what-is-site-template)
+  - [1.1 What is cookiecutter](#11-what-is-cookiecutter)
+  - [1.2 Repository contents](#12-repository-contents)
+- [2. Installation](#2-installation)
+  - [Requirements](#requirements)
+  - [2.1 Install cookiecutter](#21-install-cookiecutter)
+  - [2.2 Download the custom template](#22-download-the-custom-template)
+- [3. Usage](#3-usage)
+  - [3.1 Test run](#31-test-run)
+  - [3.2 Starting to code your project](#32-starting-to-code-your-project)
+- [4. Troubleshooting](#4-troubleshooting)
+- [5. Disclaimer](#5-disclaimer)
+- [6. Help Wanted](#6-help-wanted)
+- [7. Other links](#7-other-links)
 
 </details>
 
@@ -79,18 +87,38 @@ site-template                           -> Project directory.
 To create the project from the template you need to install cookiecutter and follow these instructions.
 
 
-## 2.1 Cookiecutter installation
+## Requirements
 
-Installing cookiecutter package on Ubuntu is very easy, you can simply run the next command to install it.
+Before installing Cookiecutter, please make sure you have the following installed on your machine:
+- [Python](https://www.python.org/downloads/)
+- [Pip](https://pip.pypa.io/en/stable/installation/)
+
+To check if Python is installed on a machine, open a terminal or command prompt like "git bash" and type:
+
+```bash
+python --version
 ```
-pip install cookiecutter
+This will display the version number of Python, if it is installed.
+
+To check if pip is installed, you can run the following command in the terminal or command prompt:
+```bash
+pip --version
+```
+If pip is installed, this command will display the version number. If pip is not installed, you will receive an error message.
+
+
+## 2.1 Install cookiecutter
+
+Installing cookiecutter package is very easy, you can simply run the next command to install it.
+```
+python -m pip install cookiecutter
 ```
 
 Visit the link to the cookiecutter documentation to learn more about the installation:  
 [Install cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html#install-cookiecutter)
 
 
-## 2.2 Site Template installation
+## 2.2 Download the custom template
 
 To generate a custom project from the template, follow these steps:
 - 1. Navigate to the path where you desire to generate the project folder.

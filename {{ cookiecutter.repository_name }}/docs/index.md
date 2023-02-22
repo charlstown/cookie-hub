@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Home
+title: {{ cookiecutter.project_name }}
 hide:
     - toc
     - nav
@@ -58,16 +58,3 @@ Welcome to the ultimate destination for all things! Our website is a veritable t
 - [:octicons-arrow-right-24: I can't access Gluon with my user](#)
 
 </div>
-
-
----
-
-{==
-
-## :fontawesome-solid-headset: Contact support
-
-Get in touch with the 24/7 IT support team to resolve any technical issues with Gluon.
-
-**[:octicons-arrow-right-24: Contact our support team](#)**
-
-==}

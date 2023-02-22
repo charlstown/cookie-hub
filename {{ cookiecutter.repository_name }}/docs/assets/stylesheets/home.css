@@ -155,6 +155,7 @@ md-container a:hover {
 .center-content {
     justify-content: center;
     display: flex;
+    align-items: center;
 }
 
 .dot {

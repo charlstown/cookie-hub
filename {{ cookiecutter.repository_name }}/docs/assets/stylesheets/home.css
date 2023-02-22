@@ -1,11 +1,13 @@
 .md-main {
-    flex-grow: 0;
-    height: 0px;
+    background-color: var(--md-default-bg-color);
 }
 
-.md-main__inner {
-    display: flex;
-    height: 100%;
+.md-content__inner {
+    text-align: center;
+}
+
+.md-content__inner:before, .md-content h1 {
+    display: none;
 }
 
 @media screen and (max-width:30em) {
@@ -72,12 +74,6 @@
     }
 }
 
-.hr {
-    border-bottom: 1px solid #eee;
-    width: 100%;
-    margin: 20px 0;
-}
-
 .text-center {
     text-align: center;
     padding-right: 15px;
@@ -134,21 +130,18 @@ h1 {
     font-size:1.3rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
-    color: var(--my-font-color--dark)
 }
 
 h2 {
     font-size:1rem;
     font-weight: 450;
     font-family: 'Lato', sans-serif;
-    color: var(--my-font-color--dark)
 }
 
 p {
     font-size: 0.8rem;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
-    color: var(--my-font-color--dark)
 }
 
 md-container a:hover {
@@ -216,6 +209,12 @@ md-container a:hover {
     opacity: 0;
 }
 
+.full-section {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
 
 /* --- Hero attributes --- */
 .hero-section {

@@ -1,84 +1,84 @@
-{{cookiecutter.license}} License
+{{cookiecutter.license}} License\
 
 {%- if cookiecutter.license == "MIT" -%}
-    Copyright (c) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+Copyright (c) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
 
-    Permission is hereby granted, free of charge, to any person obtaining
-    a copy of this software and associated documentation files (the
-    "Software"), to deal in the Software without restriction, including
-    without limitation the rights to use, copy, modify, merge, publish,
-    distribute, sublicense, and/or sell copies of the Software, and to
-    permit persons to whom the Software is furnished to do so, subject to
-    the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
 
-    The above copyright notice and this permission notice shall be
-    included in all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-    LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 {%- elif cookiecutter.license == "Apache 2.0" -%}
-   Copyright {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+Copyright {% now 'utc', '%Y' %}  {{cookiecutter.author}}
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 
 {%- elif cookiecutter.license == "GNU General Public License" -%}
-    Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-    {{cookiecutter.project_name}} Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
-    This program comes with ABSOLUTELY NO WARRANTY.
-    This is free software, and you are welcome to redistribute it
-    under certain conditions.
+{{cookiecutter.project_name}} Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions.
 
 
 {%- elif cookiecutter.license == "Corporate" -%}
-    {{ cookiecutter.company }} Private License
+{{ cookiecutter.company }} Private License
 
-    Copyright (c) {% now 'utc', '%Y' %} {{ cookiecutter.company }}
+Copyright (c) {% now 'utc', '%Y' %} {{ cookiecutter.company }}
 
-    All rights reserved.
+All rights reserved.
 
-    The code in this project (the "Software") is the property of {{ cookiecutter.company }} (the "Company") and is protected by copyright law. The Software is intended solely for internal use by the company and its affiliates, and may not be used, copied, modified, or distributed without the express written permission of the company.
+The code in this project (the "Software") is the property of {{ cookiecutter.company }} (the "Company") and is protected by copyright law. The Software is intended solely for internal use by the company and its affiliates, and may not be used, copied, modified, or distributed without the express written permission of the company.
 
-    The Software is provided on an "as is" basis, without warranty of any kind, including without limitation the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the company or its affiliates be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use of other dealings in the software.
+The Software is provided on an "as is" basis, without warranty of any kind, including without limitation the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the company or its affiliates be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use of other dealings in the software.
 
-    the company reserves the right to modify this license at any time, and without notice, and such modification shall be effective immediately upon posting of the modified license.
+the company reserves the right to modify this license at any time, and without notice, and such modification shall be effective immediately upon posting of the modified license.
 
-    By using the Software, you agree to be bound by the terms of this license. This license constitutes the entire agreement between the company and the user relating to the use of the Software and supersedes all prior or contemporaneous understandings, communications, and agreements, whether written or oral, relating to such subject matter.
+By using the Software, you agree to be bound by the terms of this license. This license constitutes the entire agreement between the company and the user relating to the use of the Software and supersedes all prior or contemporaneous understandings, communications, and agreements, whether written or oral, relating to such subject matter.
 
 
 {%- elif cookiecutter.license == "Custom" -%}
-    Choose a license at:
-    https://choosealicense.com/
+Choose a license at:
+https://choosealicense.com/
 
 {% endif %}

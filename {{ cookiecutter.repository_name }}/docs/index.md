@@ -48,6 +48,26 @@ Welcome to the ultimate destination for all things! Our website is a veritable t
 
 ---
 
-## This is another test
+## Popular links
 
-asdfklasndfjk asdnf lasjdf
+<div class="grid row-2" markdown>
+
+- [:octicons-arrow-right-24: Getting started in Gluon](#)
+- [:octicons-arrow-right-24: Create a new team](#)
+- [:octicons-arrow-right-24: Add new components to your project](#)
+- [:octicons-arrow-right-24: I can't access Gluon with my user](#)
+
+</div>
+
+
+---
+
+{==
+
+## :fontawesome-solid-headset: Contact support
+
+Get in touch with the 24/7 IT support team to resolve any technical issues with Gluon.
+
+**[:octicons-arrow-right-24: Contact our support team](#)**
+
+==}

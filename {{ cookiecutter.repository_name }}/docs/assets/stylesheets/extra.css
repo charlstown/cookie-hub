@@ -1,37 +1,3 @@
-:root {
-    /* [data-md-color-primary=red] */
-    --md-primary-fg-color: #f24c4c;
-    --md-primary-fg-color--light: #f46666;
-    --md-primary-fg-color--lighter: #fff4f4;
-    --md-primary-fg-color--dark: #b74c4c;
-    --md-primary-fg-color--glass: #ff464617;
-    --md-primary-bg-color: #fff;
-    --md-primary-bg-color--light: #ffffffb3;
-
-    /* [data-md-color-accent=red] */
-    --md-accent-fg-color: #ff1947;
-    --md-accent-fg-color--transparent: #ff19471a;
-    --md-accent-bg-color: #fff;
-    --md-accent-bg-color--light: #ffffffb3;
-
-    /* Custom colors */
-    --my-font-color--dark: #333333;
-    --my-font-color--light: #ffffff;
-    --my-font-color--accent: #e75656;
-  }
-
-  :root, [data-md-color-scheme=default] {
-    --md-footer-bg-color: #333333;
-    --md-typeset-mark-color: #ef55523b;
-    --md-typeset-a-color: #db5c5a;
-  }
-  
-  :root, [data-md-color-scheme=slate] {
-    --md-typeset-mark-color: #ef55523b;
-    --md-primary-fg-color--dark: #b74c4c;
-  }
-
-
 /* Global CSS */
 
   hr {

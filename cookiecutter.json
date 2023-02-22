@@ -1,6 +1,7 @@
 {
     "project_name": "My Cool Site",
     "project_description": "A great place with awesome resources to start your journey. {{ cookiecutter.project_name }} has everything you need to boldly explore new frontiers and conquer the digital landscape.",
+    "base_color": ["blue grey", "red", "pink", "purple", "deep purple", "blue", "light blue", "cyan", "teal", "green", "light green", "lime", "yellow", "amber", "orange"],
     "author": "Obi-Wan Kenobi",
     "github_user": "obikenobi",
     "repository_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-') }}",

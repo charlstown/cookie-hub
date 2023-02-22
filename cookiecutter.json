@@ -13,6 +13,6 @@
     "env_name": "{{ cookiecutter.repository_name }}",
     "mkdocs_version": "1.4",
     "_copy_without_render": [
-        "{{ cookiecutter.repository_name }}/overrides/*.html"
+        "*.html"
     ]
 }

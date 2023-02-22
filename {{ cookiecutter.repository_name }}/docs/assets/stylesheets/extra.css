@@ -1,0 +1,109 @@
+:root {
+    /* [data-md-color-primary=red] */
+    --md-primary-fg-color: #f24c4c;
+    --md-primary-fg-color--light: #f46666;
+    --md-primary-fg-color--lighter: #fff4f4;
+    --md-primary-fg-color--dark: #b74c4c;
+    --md-primary-fg-color--glass: #ff464617;
+    --md-primary-bg-color: #fff;
+    --md-primary-bg-color--light: #ffffffb3;
+
+    /* [data-md-color-accent=red] */
+    --md-accent-fg-color: #ff1947;
+    --md-accent-fg-color--transparent: #ff19471a;
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: #ffffffb3;
+
+    /* Custom colors */
+    --my-font-color--dark: #333333;
+    --my-font-color--light: #ffffff;
+    --my-font-color--accent: #e75656;
+  }
+
+  :root, [data-md-color-scheme=default] {
+    --md-footer-bg-color: #333333;
+    --md-typeset-mark-color: #ef55523b;
+    --md-typeset-a-color: #db5c5a;
+  }
+  
+  :root, [data-md-color-scheme=slate] {
+    --md-typeset-mark-color: #ef55523b;
+    --md-primary-fg-color--dark: #b74c4c;
+  }
+
+  
+/* Classes to create grids and cards embeded in the markdown (extension md_in_html needed) */
+.cards {
+  justify-content: center;
+  display: grid;
+  grid-gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+
+.row-2 {
+  grid-template-columns: repeat(2, minmax(8rem, 1fr));
+}
+
+.row-auto {
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+.cards ul {
+  display: contents!important;
+}
+
+.cards ul li {
+  list-style: none;
+  text-align: left;
+  padding: 0.8rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.1rem;
+  display: block;
+  transition: border .25s,box-shadow .25s;
+  height: 100%;
+  position: relative;
+}
+
+.cards p:nth-last-child(2) {
+  margin-bottom: 1rem;
+}
+
+.cards ul p:has(a) {
+  position: absolute;
+  bottom: 0;
+}
+
+.cards hr {
+  margin: 0.3rem 0;
+}
+
+.cards ul li:hover {
+  border-color: #0000;
+  box-shadow: var(--md-shadow-z2);
+}
+
+.grid {
+  grid-gap: 0.4rem;
+  display: grid;
+  margin: 1em 0;
+}
+
+.grid ul {
+  display: contents!important;
+  list-style: none;
+}
+
+.grid ul li a {
+  list-style: none;
+  text-align: left;
+  padding: 0.8rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.1rem;
+  display: block;
+  transition: border .25s, color .25s;
+}
+
+.grid ul li a:hover {
+  border-color: var(--md-default-fg-color);
+  color: var(--md-default-fg-color);
+}

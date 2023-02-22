@@ -1,0 +1,92 @@
+site_name: Gluon Community
+site_description: Gluon Community portal with resources, support, and a platform for engagement and collaboration among members.
+repo_url: https://github.com/charlstown/gluon-community-portal
+site_author: Gluon Community
+
+# Configuration
+# Theme
+theme:
+  name: material
+  custom_dir: overrides
+  # 404 page
+  static_templates:
+    - 404.html
+  logo: assets/images/favicon.svg
+  favicon: assets/images/favicon.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight 
+  language: en
+
+  # Color palette
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      # primary: red
+      # accent: red
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+# Sorting menu pages
+nav:
+    - Home: 'index.md'
+    - Getting started: 'getting-started.md' # getting started
+    - Gluon learning: https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-learning-portal/ # gluon learning
+    - About:
+      - Community Ecosystem: 'about/community-ecosystem.md'
+      - License: 'about/license.md'
+      - External links: 'about/external-links.md'
+      - Changelog: 'about/changelog.md'
+
+
+# Extensions
+markdown_extensions:
+  - admonition            # Block elements
+  - pymdownx.details      # Collapsible call-outs
+  - pymdownx.superfences  # Nested elements
+  - pymdownx.mark         # Hihlighting text
+  - attr_list             # To add buttons
+  - md_in_html            # To add html in markdown (centred images)
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Plugins
+plugins:
+  - search
+  - markdownextradata
+# css
+extra_css:
+  - assets/stylesheets/extra.css
+
+# javascript
+extra_javascript:
+  - assets/javascripts/extra.js
+
+# Copyright message
+copyright: Copyright &copy; Grupo Santander - Gluon 2023
+
+# Global variables
+extra:
+  links:
+    self-host: 'https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-community-portal/'
+    learning-host: 'https://github.alm.europe.cloudcenter.corp/pages/cib-gluon/gluon-learning-portal/'

@@ -84,6 +84,6 @@
 }
 
 .grid ul li a:hover {
-  border-color: var(--md-default-fg-color);
-  color: var(--md-default-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
 }

@@ -114,6 +114,15 @@ Installing cookiecutter package is very easy, you can simply run the next comman
 python -m pip install cookiecutter
 ```
 
+(Optional) Set the library repositories as trusted
+
+If you don't have access to the libraries repos, you can install cookiecutter with the following flags:
+```
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org cookiecutter
+```
+
+Or set the repositories as trusted in the global configuration parameters and then do the first step.
+
 Visit the link to the cookiecutter documentation to learn more about the installation:  
 [Install cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html#install-cookiecutter)
 
@@ -124,7 +133,7 @@ To generate a custom project from the template, follow these steps:
 - 1. Navigate to the path where you desire to generate the project folder.
 - 2. Run the cookiecutter command followed by the repository URL.
   ```
-  python -m cookiecutter https://github.com/charlstown/py-template.git
+  python -m cookiecutter https://github.com/charlstown/site-template.git
   ```
 - 3. Fill out the form in the console and the project will be generated at the end.
 

@@ -87,39 +87,46 @@ site-template                           -> Project directory.
 
 To create the project from the template you need to install cookiecutter and follow these instructions.
 
+> **Note**  
+> It is recommended to create and activate a virtual environment to install the libraries
+
 
 ## Prerequisites
 
-Before installing Cookiecutter, please make sure you have the following software installed on your machine:
+Before installing Cookiecutter, please make sure you have the following software installed on your environment:
 - [Python](https://www.python.org/downloads/)
 - [Pip](https://pip.pypa.io/en/stable/installation/)
 
-To check if Python is installed on a machine, open a terminal or command prompt like `git bash` and type:
+To Verify the installation you can follow this steps.
 
-```bash
-python --version
-```
-This will display the version number of Python, if it is installed.
+- Check **Python** installation:
 
-To check if pip is installed, you can run the following command in the terminal or command prompt:
-```bash
-pip --version
-```
-If pip is installed, this command will display the version number. If pip is not installed, you will receive an error message.
+  To check if Python is installed on a machine, open a terminal or command prompt like `git bash` and type:
+
+  ```bash
+  python --version
+  ```
+  This will display the version number of Python, if it is installed.
+
+- Check **Pip** installation:
+
+  To check if pip is installed, you can run the following command in the terminal or command prompt:
+  ```bash
+  pip --version
+  ```
+  If pip is installed, this command will display the version number. If pip is not installed, you will receive an error message.
 
 
 ## 2.1 Install cookiecutter
 
-- **Install cookiecutter**
+- **Install cookiecutter:**
+
   Installing cookiecutter package is very easy, you can simply run the next command to install it.
   ```
   python -m pip install cookiecutter
   ```
 
-  > **Note**  
-  > It is recommended to create and activate a virtual environment to install the libraries
-
-- **Follow this step if you don't have pypi as trusted host permanently**
+- **(optional) Follow this step if you don't have pypi as trusted host permanently:**
 
   If you don't have access to pypi, you can install cookiecutter with the following flags:
   ```bash

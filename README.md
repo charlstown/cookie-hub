@@ -87,13 +87,13 @@ site-template                           -> Project directory.
 To create the project from the template you need to install cookiecutter and follow these instructions.
 
 
-## Requirements
+## Prerequisites
 
-Before installing Cookiecutter, please make sure you have the following installed on your machine:
+Before installing Cookiecutter, please make sure you have the following software installed on your machine:
 - [Python](https://www.python.org/downloads/)
 - [Pip](https://pip.pypa.io/en/stable/installation/)
 
-To check if Python is installed on a machine, open a terminal or command prompt like "git bash" and type:
+To check if Python is installed on a machine, open a terminal or command prompt like `git bash` and type:
 
 ```bash
 python --version
@@ -113,6 +113,9 @@ Installing cookiecutter package is very easy, you can simply run the next comman
 ```
 python -m pip install cookiecutter
 ```
+
+> **Note**
+> It is recommended to create and activate a virtual environment to install the libraries
 
 (Optional) Set the library repositories as trusted
 

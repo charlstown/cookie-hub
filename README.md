@@ -34,8 +34,9 @@ This template includes all the essential features you need to create a website t
   - [2.1 Install cookiecutter](#21-install-cookiecutter)
   - [2.2 Download the custom template](#22-download-the-custom-template)
 - [3. Usage](#3-usage)
-  - [3.1 Test run](#31-test-run)
-  - [3.2 Starting to code your project](#32-starting-to-code-your-project)
+  - [3.1 Install the requirements](#31-install-the-requirements)
+  - [3.2 Test run](#32-test-run)
+  - [3.3 Starting to code your project](#33-starting-to-code-your-project)
 - [4. Troubleshooting](#4-troubleshooting)
 - [5. Disclaimer](#5-disclaimer)
 - [6. Help Wanted](#6-help-wanted)
@@ -109,22 +110,28 @@ If pip is installed, this command will display the version number. If pip is not
 
 ## 2.1 Install cookiecutter
 
-Installing cookiecutter package is very easy, you can simply run the next command to install it.
-```
-python -m pip install cookiecutter
-```
+- **Install cookiecutter**
+  Installing cookiecutter package is very easy, you can simply run the next command to install it.
+  ```
+  python -m pip install cookiecutter
+  ```
 
-> **Note**
-> It is recommended to create and activate a virtual environment to install the libraries
+  > **Note**  
+  > It is recommended to create and activate a virtual environment to install the libraries
 
-(Optional) Set the library repositories as trusted
+- **Follow this step if you don't have pypi as trusted host permanently**
 
-If you don't have access to the libraries repos, you can install cookiecutter with the following flags:
-```
-pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org cookiecutter
-```
+  If you don't have access to pypi, you can install cookiecutter with the following flags:
+  ```bash
+  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org cookiecutter
+  ```
 
-Or set the repositories as trusted in the global configuration parameters and then do the first step.
+  Or set the repositories as trusted in the global configuration parameters with the following command and then do the installation.
+
+  ```bash
+  pip config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org"
+  ```
+
 
 Visit the link to the cookiecutter documentation to learn more about the installation:  
 [Install cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html#install-cookiecutter)
@@ -144,7 +151,18 @@ To generate a custom project from the template, follow these steps:
 
 # 3. Usage
 
-## 3.1 Test run
+## 3.1 Install the requirements
+
+You can install the requirements for the project by running the command
+```
+pip install -r requirements.txt
+```
+
+Remember that if you didn't set the pypi as trusted host globally in the previous step, you can add the following flags to the command.
+```
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
+```
+## 3.2 Test run
 
 After setting up the template, you can do a test run.
 
@@ -156,7 +174,7 @@ mkdocs serve -w overrides/
 You may add the flag '-a localhost:8080' to select a custom local port.
 
 
-## 3.2 Starting to code your project
+## 3.3 Starting to code your project
 
 We recommend starting coding your project with these tips:
 

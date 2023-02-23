@@ -93,7 +93,7 @@ To create the project from the template you need to install cookiecutter and fol
 
 ## Prerequisites
 
-Before installing Cookiecutter, please make sure you have the following software installed on your environment:
+Before installing Cookiecutter, please make sure you have the following software installed on your machine/environment:
 - [Python](https://www.python.org/downloads/)
 - [Pip](https://pip.pypa.io/en/stable/installation/)
 
@@ -147,12 +147,15 @@ Visit the link to the cookiecutter documentation to learn more about the install
 ## 2.2 Download the custom template
 
 To generate a custom project from the template, follow these steps:
+
 - 1. Navigate to the path where you desire to generate the project folder.
 - 2. Run the cookiecutter command followed by the repository URL.
   ```
   python -m cookiecutter https://github.com/charlstown/site-template.git
   ```
 - 3. Fill out the form in the console and the project will be generated at the end.
+
+:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.
 
 </br>
 

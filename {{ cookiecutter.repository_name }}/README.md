@@ -4,7 +4,8 @@
 
 This repository acts as a central hub to submit requirements, feature requests and troubleshooting for our stakeholders.
 
-[![Open-issue-button]]({{ cookiecutter.repository_name }}/issues)
+[![Open-issue-button]]({{ cookiecutter.epository_url }}/issues)
+
 
 </br>
 
@@ -27,18 +28,18 @@ This repository is your go-to place to share your ideas and needs for our projec
 
 ## 2. Usage
 
-Our repository provides the [**issues channel**](https://github.com/company/{{ cookiecutter.repository_name }}/issues) used to submit new requirements for platform components. It serves as a formal way to document and track feature requests, resources, and bug reports.
+Our repository provides the [**issues channel**]({{ cookiecutter.epository_url }}/issues) used to submit new issues. It serves as a formal way to document and track feature requests, resources, and bug reports.
 
-[:arrow_forward: **Report incident**](https://github.com/company)
+:arrow_forward: **Report incident**
 Report any issues encountered while using the Data Platform tools available like Jira, Github, repositories, etc.
 
-[:arrow_forward: **Request new member**]()
+:arrow_forward: **Request new member**
 Request the onboard of a new member/s to the Data Platform aplication.
 
-[:arrow_forward: **Request resource**]()
+:arrow_forward: **Request resource**
 Request new resources like repositories, jira boards, new branches, etc.
 
-[:arrow_forward: **Add requirement**](https://github.com/company-group/)
+:arrow_forward: **Add requirement**
 Add new requirements to our Data Platform Components as an external stakeholder.
 
 
@@ -54,12 +55,12 @@ Add new requirements to our Data Platform Components as an external stakeholder.
 
 Don't hesitate to contact any of the following members of the Data Platform Team:
 
-- [Carlos Grande](mailto:my-mail) · Access,, general questions and permissions
+- [Carlos Grande](mailto:{{ cookiecutter.maintainer-email }}) · Extra support and very specific questions.
 
 
 ## 4. Other links
 
-Links
+Fill this section with other links from the project.
 
 
 <!---------------------------------------------------------------------------->

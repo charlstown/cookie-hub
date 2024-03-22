@@ -1,19 +1,11 @@
 {
-    "project_name": "My Cool Site",
-    "project_description": "A great place with awesome resources to start your journey. {{ cookiecutter.project_name }} has everything you need to boldly explore new frontiers and conquer the digital landscape.",
-    "base_color": ["blue grey", "red", "pink", "purple", "deep purple", "blue", "light blue", "cyan", "teal", "green", "light green", "lime", "yellow", "amber", "orange"],
-    "author": "Obi-Wan Kenobi",
-    "github_user": "obikenobi",
+    "project_name": "Demand Hub",
+    "project_description": "This repository acts as a central hub to submit requirements, feature requests and troubleshooting for our stakeholders.",
+    "organization": "The Umbrella Corporation",
+    "github-organization": "cookiecutter.github-organization.strip().lower().replace(' ', '-')",
     "repository_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-') }}",
-    "package_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-').replace('-', '_') }}",
-    "repository_url": "https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.repository_name }}",
-    "maintainer": "{{ cookiecutter.author }}",
+    "repository_url": "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.repository_name }}",
+    "maintainer": "@charlstown",
     "license": ["MIT", "Apache 2.0", "GNU General Public License", "Corporate", "Custom"],
-    "company": "(Optional) Only if selected license is Corporate",
-    "version": "0.1.0",
-    "env_name": "{{ cookiecutter.repository_name }}",
-    "mkdocs_version": "1.4",
-    "_copy_without_render": [
-        "*.html"
-    ]
+    "company": "(Optional) Only if selected license is Corporate"
 }

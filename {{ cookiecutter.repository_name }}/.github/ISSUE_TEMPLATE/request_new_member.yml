@@ -1,0 +1,47 @@
+name: Request new member
+description: Request the onboard of a new member/s to the Data Platform aplication
+title: "[Onboarding]: TYPE TITLE HERE"
+labels: ["kind/onboarding"]
+assignees:
+  - n963309-sgt_sangroup
+body:
+
+  # Company origin
+  - type: input
+    id: company
+    attributes:
+      label: Which company are the new member/s coming from?
+    validations:
+      required: true
+
+  # Final team destination
+  - type: dropdown
+    id: destination
+    attributes:
+      label: What team are the new member/s going to be part of?
+      options:
+        - Ingestion
+        - Orchestration
+        - MLOPS
+        - Data Modelling
+        - Other
+    validations:
+      required: true
+
+  # Start date
+  - type: input
+    id: date
+    attributes:
+      label: In what month are the new members joining the team?
+    validations:
+      required: true
+
+  # Members description
+  - type: textarea
+    id: members-description
+    attributes:
+      label: List the new member/s
+      description: Please write the details to onboard the new member
+      placeholder: Full name - corporate id (n000000) - Profile (Front developer, Tech lead, Data engineer...)
+    validations:
+      required: true

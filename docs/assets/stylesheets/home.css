@@ -222,7 +222,7 @@ md-container a:hover {
     height: auto;   
     background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--dark) 99%);
     position: relative;
-    height: 70vh;
+    height: 60vh;
 }
 
 .tx-hero {
@@ -270,163 +270,12 @@ md-container a:hover {
 }
 
 
-/* --- Community resources --- */
-.resources {
-    background-color: white;
+/* --- Home.md content --- */
+.code-width pre {
+    margin-left: 15%!important;
+    margin-right: 15%!important;
 }
 
-.resources-meta {
-    display: block;
-}
-
-.resources-meta__header {
-    text-align: center;
-}
-
-.resources-meta__main {
-    margin-top: 42px;
-}
-
-.feature-item {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-    padding: 0 15px;
-    word-break: break-word;
-}
-
-.feature-item h2 {
-    font-weight: 300;
-    font-size: 25px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: normal;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: inherit;
-}
-
-.feature-item svg {
-    height: 25px;
-    float: left;
-    vertical-align: middle;
-    margin-right: 10px;
-    transform: translateY(10%);
-    fill: var(--my-font-color--dark);
-}
-
-.feature-item p {
-    font-size: 16px;
-    line-height: 1.8em;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    margin: 0 0 10px;
-    display: block;
-}
-
-/* --- Discover Gluon --- */
-.discover-gluon {
-    background-color: var(--md-primary-fg-color--lighter);
-}
-
-.discover-gluon-meta {
-    display: block;
-    min-width: 70%;
-    text-align: center;
-}
-
-.discover-gluon__header h1 {
-    color: var(--md-primary-fg-color);
-}
-
-.discover-gluon__features {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-top: 50px;
-}
-
-.discover-gluon__feature {
-    float: left;
-    width: 14.2%;
-    text-align: center;
-}
-
-.discover-gluon__feature svg, .discover-gluon__features svg {
-    fill: var(--md-primary-fg-color);
-}
-
-.discover-gluon__feature p {
-    font-size: 18px;
-    line-height: 1.8em;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    margin: 0 0 10px;
-    display: block;
-    color: var(--md-primary-fg-color);
-}
-
-.discover-gluon__cta {
-    padding: 1rem;
-}
-
-/* --- Stats --- */
-.stats {
-    background-color: white;
-}
-
-.stats-meta {
-    text-align: center;
-}
-
-.counter {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    padding-top: 2rem;
-}
-
-.counter svg {
-    fill: var(--my-font-color--dark);
-}
-
-.counter h2 {
-    font-weight: 600;
-    font-size: 1.4rem;
-    padding-bottom: 0.2rem;
-    padding-top: 1rem;
-}
-
-.counter p {
-    font-weight: 600;
-}
-
-/* --- Join the community --- */
-.join-community {
-    /* background-image: radial-gradient(circle at -48% 130%, rgb(92, 140, 202) 24%, var(--md-primary-fg-color--light) 80%); */
-    /* background-color: var(--md);
-    background-image: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 46%, #ffbd96 100%); */
-    background-image: linear-gradient(to right top, #f7ada5, #f79e95, #f78e85, #f57e75, #f36d66, #f46776, #f26386, #ed6296, #d878bf, #b88ed9, #98a1e4, #83afe1);
-
-}
-
-.join-community__meta {
-    text-align: center;
-    max-width: 50%;
-}
-
-.join-community__meta h1 {
-    color: var(--my-font-color--light);
-    padding-bottom: 1rem;;
-}
-
-.join-community__meta h2 {
-    color: var(--my-font-color--light);
-    font-weight: 100;
-    padding-bottom: 1rem;
-}
 
 /* --- Footer attributes --- */
 .footer {

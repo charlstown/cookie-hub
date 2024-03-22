@@ -1,0 +1,50 @@
+name: Request resource
+description: Request new resources like repositories, jira boards, new branches, etc.
+title: "[Resource]: TYPE TITLE HERE"
+labels: ["kind/resource"]
+assignees:
+  - n963309-sgt_sangroup
+body:
+
+  # Data component type
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which tool is the issue related with?
+      options:
+        - Jira
+        - Github
+        - Sandbox cloud environments
+        - DEV cloud environments
+        - Gluon
+        - Others
+    validations:
+      required: true
+
+  # Criticality
+  - type: dropdown
+    id: criticality
+    attributes:
+      label: How critical is the resource you need
+      options:
+        - Blocking
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  # Repository reminder
+  - type: markdown
+    attributes:
+      value: |
+        *If the resource is a repository make sure to describe the base technology used to fit the right component template from Gluon.*
+
+  # Goal description
+  - type: textarea
+    id: resource-description
+    attributes:
+      label: Resource description
+      description: Please describe as precisely as possible what's the resource that you need.
+    validations:
+      required: true

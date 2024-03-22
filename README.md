@@ -1,42 +1,39 @@
-# Site Template
+# Cookie Hub
 
 [![mkdocs](https://img.shields.io/badge/mkdocs-1.4-blue)](https://www.mkdocs.org/)
 [![template](https://img.shields.io/badge/template-material-dd2e57)](https://squidfunk.github.io/mkdocs-material/)
 [![license](https://img.shields.io/badge/license-MIT-green.svg?logo=cachet&style=flat&logoColor=green)](https://opensource.org/licenses/MIT)
 [![My Site](https://img.shields.io/badge/about%20me-carlosgrande.me-red?style=flat&logo=aboutdotme&logoColor=red)](https://carlosgrande.me/)
 
-This is a 🍪 cookiecutter multipurpose template for creating a wide range of websites, from personal sites and blogs to corporate sites and online communities. With this template, you can easily get started on your project and have a professional-looking website up and running in no time.
+This is a 🍪 cookiecutter multipurpose template for efficient management of user demands and support requests. Easily track bugs, requirements, support, resources needs, and more, all in one convenient location.
 
-![Logo](docs/assets/images/logo.png)
+**Features:**
 
-Features:
+:arrow_forward: Issues templates:
+  - Bug reports
+  - Support requests
+  - Requirement submissions
+  - Onboarding new members
+  - Resource requests
 
-- Modern and clean design
-- Fully responsive and mobile-friendly
-- Easy to customize and extend
-- Built with the latest web technologies
-- Compatible with a wide range of browsers
-- Cross-platform support
+:arrow_forward: Workflows for labeling issues:
+  - Automatic labeling based on comment parsing
+  - Auto-labeling when an issue is assigned
 
-
-This template includes all the essential features you need to create a website that meets your specific needs. Whether you're a developer, designer, blogger, entrepreneur, or someone who just wants to have an online presence, this template has got you covered.
 
 </br>
 
 <details><summary><b>Readme contents</b></summary>
 
-- [Site Template](#site-template)
-  - [1. What is Site Template](#1-what-is-site-template)
+- [Cookie Hub](#cookie-hub)
+  - [1. What is Cookie Hub](#1-what-is-cookie-hub)
   - [1.1 What is cookiecutter](#11-what-is-cookiecutter)
   - [1.2 Repository contents](#12-repository-contents)
 - [2. Installation](#2-installation)
-  - [Requirements](#requirements)
-  - [2.1 Install cookiecutter](#21-install-cookiecutter)
-  - [2.2 Download the custom template](#22-download-the-custom-template)
+  - [2.1 Build repository from template](#21-build-repository-from-template)
 - [3. Usage](#3-usage)
-  - [3.1 Install the requirements](#31-install-the-requirements)
-  - [3.2 Test run](#32-test-run)
-  - [3.3 Starting to code your project](#33-starting-to-code-your-project)
+  - [3.1 Create labels](#31-install-the-requirements)
+  - [3.2 Test the workflow](#32-test-run)
 - [4. Troubleshooting](#4-troubleshooting)
 - [5. Disclaimer](#5-disclaimer)
 - [6. Help Wanted](#6-help-wanted)
@@ -48,11 +45,17 @@ This template includes all the essential features you need to create a website t
 
 ---
 
-## 1. What is Site Template
+## 1. What is Cookie Hub
 
-This is a modern and clean template for MkDocs, built using the Material Design framework. The template is fully responsive and mobile-friendly, making it easy to view your content on any device. It's also easy to customize and extend, so you can make it your own.
+This is a modern and user-friendly template for managing demand and support services within tech teams. Built with flexibility in mind, it offers customizable issue templates for bug reports, support requests, feature requirements, and more. With automated workflows for issue labeling and seamless integration with GitHub.
 
-Built with the latest web technologies, this template is compatible with a wide range of browsers and has cross-platform support. Whether you're creating a personal site, a blog, documentation, or a corporate site, the MkDocs Material Template is the perfect choice for your project.
+
+This template is perfect for various use cases, such as:
+- Managing customer feedback and feature requests for software development teams.
+- Coordinating service requests and incident reports for IT support teams.
+- Organizing project requirements and tracking progress for agile development teams.
+- Facilitating communication and collaboration among remote teams working on a shared project.
+- Streamlining the onboarding process for new team members by providing a centralized repository of resources and guidelines.
 
 
 ## 1.1 What is cookiecutter
@@ -67,7 +70,7 @@ GitHub: https://github.com/cookiecutter/cookiecutter
 ## 1.2 Repository contents
 
 ```
-site-template                           -> Project directory.
+cookie-site                           -> Project directory.
 ├── cookiecutter.json                   -> Cookiecutter values.
 ├── {{cookiecutter.repository_name}}    -> Cookiecutter template.
 │   └── ...
@@ -85,77 +88,24 @@ site-template                           -> Project directory.
 
 # 2. Installation
 
-To create the project from the template you need to install cookiecutter and follow these instructions.
+To create the project from the template you need to install Python, pip and the cookiecutter python library and follow these instructions.
 
 > **Note**  
 > It is recommended to create and activate a virtual environment to install the libraries
 
 
-## Prerequisites
-
-Before installing Cookiecutter, please make sure you have the following software installed on your machine/environment:
-- [Python](https://www.python.org/downloads/)
-- [Pip](https://pip.pypa.io/en/stable/installation/)
-
-To Verify the installation you can follow this steps.
-
-- Check **Python** installation:
-
-  To check if Python is installed on a machine, open a terminal or command prompt like `git bash` and type:
-
-  ```bash
-  python --version
-  ```
-  This will display the version number of Python, if it is installed.
-
-- Check **Pip** installation:
-
-  To check if pip is installed, you can run the following command in the terminal or command prompt:
-  ```bash
-  pip --version
-  ```
-  If pip is installed, this command will display the version number. If pip is not installed, you will receive an error message.
-
-
-## 2.1 Install cookiecutter
-
-- **Install cookiecutter:**
-
-  Installing cookiecutter package is very easy, you can simply run the next command to install it.
-  ```
-  python -m pip install cookiecutter
-  ```
-
-- **(optional) Follow this step if you don't have pypi as trusted host permanently:**
-
-  If you don't have access to pypi, you can install cookiecutter with the following flags:
-  ```bash
-  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org cookiecutter
-  ```
-
-  Or set the repositories as trusted in the global configuration parameters with the following command and then do the installation.
-
-  ```bash
-  pip config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org"
-  ```
-
-
-Visit the link to the cookiecutter documentation to learn more about the installation:  
-[Install cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html#install-cookiecutter)
-
-
-## 2.2 Download the custom template
+## 2.1 Build repository from template
 
 To generate a custom project from the template, follow these steps:
 
-- 1. Navigate to the path where you desire to generate the project folder.
-- 2. Run the cookiecutter command followed by the repository URL.
+1. Navigate to the path where you desire to generate the project folder.
+2. Run the cookiecutter command followed by the repository URL.
+  ```bash
+  python -m cookiecutter https://github.com/charlstown/cookie-hub.git
   ```
-  python -m cookiecutter https://github.com/charlstown/site-template.git
-  ```
-- 3. Fill out the form in the console and the project will be generated at the end.
+3. Fill out the form in the console and the project will be generated at the end.
 
-:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.
+**:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.**
 
 </br>
 
@@ -164,7 +114,7 @@ To generate a custom project from the template, follow these steps:
 ## 3.1 Install the requirements
 
 You can install the requirements for the project by running the command
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -172,23 +122,63 @@ Remember that if you didn't set the pypi as trusted host globally in the previou
 ```
 pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt
 ```
+
+
 ## 3.2 Test run
 
 After setting up the template, you can do a test run.
 
 Serve the site locally running this command.
-```
+```bash
 mkdocs serve -w overrides/
 ```
 
 You may add the flag '-a localhost:8080' to select a custom local port.
 
+## 3.3  Adding the project to a new Github repository
+
+- **Step 1: Create a new repository in github:**
+
+  Create the new repository and make sure you give it the same name of the project folder, in our case my-cool-site.
+
+  > **Warning**
+  > Don't add any predefined file from github in the new repository, all the files are included in the local project folder.
+
+- **step 2: Push the local repository:**
+
+  ```bash
+  git remote add origin {{LINK TO YOUR EMPTY REPO}}
+  git branch -M main
+  git push -u origin main
+  ```
 
 ## 3.3 Starting to code your project
 
-We recommend starting coding your project with these tips:
+To start coding your project we recommend to understand the project structure.
+```
+my-cool-site/                   -> Project directory
+├── mkdocs.yml                  -> MkDocs configuration file
+├── docs/                       -> Pages and site content
+│   ├── about/                  -> About section with pages
+│   ├── assets/                 -> Global assets for the site
+│   │   ├── images              -> Global images for the site
+│   │   ├── javascripts         -> Global javascripts for the site
+│   │   └── stylesheets         -> Global CSS styles for the site
+│   ├── getting-started.md      -> Getting started page
+│   └── index.md                -> Home page
+├── overrides/                  -> HTML to override material theme
+│   ├── home.html               -> HTML for the home page
+│   └── main.html               -> HTML for all pages
+├── README.md                   -> README file.
+├── code_of_conduct.md          -> Code of conduct file
+├── contributing.md             -> Contributing file
+├── LICENSE                     -> LICENSE file
+└── requirements.txt            -> Requirements to run the project
+```
 
-CONTENT
+### Understand the project structure
+
+
 
 </br>
 

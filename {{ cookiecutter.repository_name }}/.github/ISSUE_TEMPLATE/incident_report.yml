@@ -1,0 +1,46 @@
+name: Report incident
+description: Report any issues encountered while using the Data Platform tools available like Jira, Github, repositories, etc.
+title: "[Incident]: TYPE TITLE HERE"
+labels: ["kind/incident"]
+assignees:
+  - n963309-sgt_sangroup
+body:
+
+  # Data component type
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which tool is the issue related with?
+      options:
+        - Jira
+        - Github
+        - Confluence
+        - Sandbox cloud environments
+        - DEV cloud environments
+        - Gluon
+        - Others
+    validations:
+      required: true
+
+  # Criticality
+  - type: dropdown
+    id: criticality
+    attributes:
+      label: How critical is your incident
+      options:
+        - Blocking
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  # Goal description
+  - type: textarea
+    id: incident-description
+    attributes:
+      label: Description
+      description: Please describe as precisely as possible what's the incident. Please attach useful screenshots, even from Browser console if it applies.
+      placeholder: I not able to access to Jira from...
+    validations:
+      required: true

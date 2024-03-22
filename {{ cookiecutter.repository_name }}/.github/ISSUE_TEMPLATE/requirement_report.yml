@@ -1,0 +1,74 @@
+name: Add requirement
+description: Add new requirements to our Data Platform Components as an external stakeholder.
+title: "[Requirement]: TYPE TITLE HERE"
+labels: ["kind/requirement"]
+assignees:
+  - n963309-sgt_sangroup
+body:
+
+  # Data component type
+  - type: dropdown
+    id: data-component
+    attributes:
+      label: Under which component would you like to open the new requirement?
+      options:
+        - Ingestion
+        - Orchestration
+        - MLOPS
+        - Data Terms Dictionary
+        - Other
+    validations:
+      required: true
+
+  # Company
+  - type: input
+    id: company
+    attributes:
+      label: Please, indicate your company
+      placeholder: Santander Spain
+    validations:
+      required: true
+
+  # Goal description
+  - type: textarea
+    id: goal
+    attributes:
+      label: 🎯 Goal
+      description: Describe the Goal of the requirement from the user's point of view.
+      placeholder: As a user, I want to ...
+    validations:
+      required: true
+
+  # How it works
+  - type: textarea
+    id: how-it-works
+    attributes:
+      label: ⚙️ How does it work?
+      description: Provide a detailed explanation of how this requirement should be implemented and how it will function in the system.
+      placeholder: The detailed Steps for the implementation are...
+    validations:
+      required: true
+
+  # Acceptance criteria
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: ✅ Acceptance criteria
+      description: Define the conditions that must be met for this requirement to be considered complete.
+      placeholder: Users should be able to...
+    validations:
+      required: true
+
+  # Priority
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Criticality
+      description: Indicate how critical is this requirement for your company
+      options:
+        - Blocking
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true

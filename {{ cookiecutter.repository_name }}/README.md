@@ -1,6 +1,6 @@
 # {{ cookiecutter.project_name }}
 
-[![GDP](https://img.shields.io/badge/Project-{{ cookiecutter.repository_name }}-red.svg?style=flat&logoColor=green)](LICENSE)
+[![Project](https://img.shields.io/badge/Project-{{ cookiecutter.repository_name | replace('-', '_') }}-red.svg?style=flat&logoColor=green)](LICENSE)
 
 This repository acts as a central hub to submit requirements, feature requests and troubleshooting for our stakeholders.
 

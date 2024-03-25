@@ -1,5 +1,4 @@
 {{cookiecutter.license}} License
-
 {{ "\n" }}
 
 {%- if cookiecutter.license == "MIT" -%}

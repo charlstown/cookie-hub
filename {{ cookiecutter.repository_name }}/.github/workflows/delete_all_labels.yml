@@ -1,0 +1,33 @@
+name: Delete all labels
+on: workflow_dispatch
+
+jobs:
+  delete-labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+    - name: Get current labels
+      id: get-labels
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const labels = await github.rest.issues.listLabelsForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo
+          });
+          return labels.data;
+
+    - name: Delete labels
+      if: ${{ steps.get-labels.outputs.labels.length > 0 }}
+      run: |
+        const labels = ${{ toJSON(steps.get-labels.outputs.labels) }};
+        for (const label of labels) {
+          await github.rest.issues.deleteLabel({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            name: label.name
+          });
+        }
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,34 +1,44 @@
-name: Comment when opened
+name: Create custom labels
 on: workflow_dispatch
 
 jobs:
   create-labels:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    env:
+      LABELS_JSON: |
+        [
+          {"name": "[type] incident", "color": "0052CC", "description": "The group of issues opened as an incident type."},
+          {"name": "[type] requirement", "color": "0052CC", "description": "The group of issues opened as a requirement type."},
+          {"name": "[type] bug", "color": "E99695", "description": "The group of issues opened as a bug type."},
+          {"name": "[type] onboarding", "color": "0052CC", "description": "The group of issues opened as an onboarding type."},
+          {"name": "[type] resource", "color": "0052CC", "description": "The group of issues opened as a resource type."}
+          {"name": "[status] review", "color": "0E8A16", "description": "The group of issues that are under review."}
+          {"name": "[status] awaiting", "color": "FBCA04", "description": "The group of issues that are awaiting a response from the user."}
+          {"name": "[status] bloqued", "color": "B60205", "description": "The group of issues that are bloqued."}
+        ]
     steps:
-      - run: |
-          gh label create "[type] incident" \
-            --description "The group of issues opened as an incident type." \
-            --color 0052CC
-          gh label create "[type] requirement" \
-            --description "The group of issues opened as a requirement type." \
-            --color 0052CC
-          gh label create "[type] bug" \
-            --description "The group of issues opened as a bug type." \
-            --color E99695
-          gh label create "[type] onboarding \
-            --description "The group of issues opened as an onboarding type." \
-            --color 0052CC
-          gh label create "[type] resource \
-            --description "	The group of issues opened as a resource type." \
-            --color 0052CC
-          gh label create "[status] review" \
-            --description "The group of issues that are under review." \
-            --color 0E8A16
-          gh label create "[status] awaiting" \
-            --description "The group of issues that are awaiting a response from the user." \
-            --color FBCA04
-          gh label create "[status] bloqued" \
-            --description "The group of issues that are bloqued." \
-            --color B60205
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/github-script@v7
+      with:
+        script: |
+          const labels = JSON.parse(process.env.LABELS_JSON);
+          for (const label of labels) {
+            try {
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: label.name,
+                description: label.description || '',
+                color: label.color
+              });
+            } catch (error) {
+              // Check if the error is because the label already exists
+              if (error.status === 422) {
+                console.log(`Label '${label.name}' already exists. Skipping.`);
+              } else {
+                // Log other errors
+                console.error(`Error creating label '${label.name}': ${error}`);
+              }
+            }
+          }

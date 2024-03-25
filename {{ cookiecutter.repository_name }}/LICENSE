@@ -1,7 +1,7 @@
 {{cookiecutter.license}} License\
 
 {%- if cookiecutter.license == "MIT" -%}
-Copyright (c) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+Copyright (c) {% now 'utc', '%Y' %}  {{cookiecutter.maintainer}}
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -24,7 +24,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 {%- elif cookiecutter.license == "Apache 2.0" -%}
-Copyright {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+Copyright {% now 'utc', '%Y' %}  {{cookiecutter.maintainer}}
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ limitations under the License.
 
 
 {%- elif cookiecutter.license == "GNU General Public License" -%}
-Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.maintainer}}
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -55,7 +55,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-{{cookiecutter.project_name}} Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.author}}
+{{cookiecutter.project_name}} Copyright (C) {% now 'utc', '%Y' %}  {{cookiecutter.maintainer}}
 This program comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it
 under certain conditions.

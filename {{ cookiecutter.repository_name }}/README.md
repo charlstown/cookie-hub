@@ -4,7 +4,7 @@
 
 This repository acts as a central hub to submit requirements, feature requests and troubleshooting for our stakeholders.
 
-[![Open-issue-button]]({{ cookiecutter.epository_url }}/issues)
+[![Open-issue-button]]({{ cookiecutter.repository_url }}/issues)
 
 
 </br>

@@ -1,6 +1,6 @@
 {{cookiecutter.license}} License
 
---
+
 
 {%- if cookiecutter.license == "MIT" -%}
 Copyright (c) {% now 'utc', '%Y' %}  {{cookiecutter.maintainer}}

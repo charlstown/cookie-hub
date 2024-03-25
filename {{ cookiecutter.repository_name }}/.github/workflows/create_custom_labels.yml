@@ -13,9 +13,9 @@ jobs:
           {"name": "[type] requirement", "color": "0052CC", "description": "The group of issues opened as a requirement type."},
           {"name": "[type] bug", "color": "E99695", "description": "The group of issues opened as a bug type."},
           {"name": "[type] onboarding", "color": "0052CC", "description": "The group of issues opened as an onboarding type."},
-          {"name": "[type] resource", "color": "0052CC", "description": "The group of issues opened as a resource type."}
-          {"name": "[status] review", "color": "0E8A16", "description": "The group of issues that are under review."}
-          {"name": "[status] awaiting", "color": "FBCA04", "description": "The group of issues that are awaiting a response from the user."}
+          {"name": "[type] resource", "color": "0052CC", "description": "The group of issues opened as a resource type."},
+          {"name": "[status] review", "color": "0E8A16", "description": "The group of issues that are under review."},
+          {"name": "[status] awaiting", "color": "FBCA04", "description": "The group of issues that are awaiting a response from the user."},
           {"name": "[status] bloqued", "color": "B60205", "description": "The group of issues that are bloqued."}
         ]
     steps:

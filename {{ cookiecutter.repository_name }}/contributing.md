@@ -69,4 +69,4 @@ an issue against the template repository.
 
 Happy coding!
 
--- @{{ cookiecutter.author }}
+-- @{{ cookiecutter.maintainer }}

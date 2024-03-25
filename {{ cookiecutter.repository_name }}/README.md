@@ -28,7 +28,7 @@ This repository is your go-to place to share your ideas and needs for our projec
 
 ## 2. Usage
 
-Our repository provides the [**issues channel**]({{ cookiecutter.epository_url }}/issues) used to submit new issues. It serves as a formal way to document and track feature requests, resources, and bug reports.
+Our repository provides the [**issues channel**]({{ cookiecutter.repository_url }}/issues) used to submit new issues. It serves as a formal way to document and track feature requests, resources, and bug reports.
 
 :arrow_forward: **Report incident**
 Report any issues encountered while using the Data Platform tools available like Jira, Github, repositories, etc.

@@ -93,8 +93,16 @@ To create the project from the template you need to install Python, pip and the 
 > **Note**  
 > It is recommended to create and activate a virtual environment to install the libraries
 
+## 2.1 Install cookiecutter
 
-## 2.1 Build repository from template
+To install cookicutter run the following command.
+
+```bash
+pip install cookiecutter
+```
+
+
+## 2.2 Build repository from template
 
 To generate a custom project from the template, follow these steps:
 
@@ -108,7 +116,7 @@ To generate a custom project from the template, follow these steps:
 **:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.**
 
 
-## 2.2 [Optional] Generate custom labels
+## 2.3 [Optional] Generate custom labels
 
 We have two types of custom labels for this template, the __type__ and the __status__ of the issue. To create these labels yopu need to run the workflow named __`Create custom labels`__.
 

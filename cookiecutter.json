@@ -1,12 +1,11 @@
 {
     "project_name": "Demand Hub",
     "project_description": "This repository acts as a central hub to submit requirements, feature requests and troubleshooting for our stakeholders.",
-    "organization": "The Umbrella Corporation",
-    "github-organization": "cookiecutter.github-organization.strip().lower().replace(' ', '-')",
+    "github_organization": "the-umbrella-corporation",
     "repository_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-') }}",
-    "repository_url": "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.repository_name }}",
+    "repository_url": "https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.repository_name }}",
     "maintainer": "@charlstown",
     "maintainer-email": "maintainer@mail.com",
     "license": ["MIT", "Apache 2.0", "GNU General Public License", "Corporate", "Custom"],
-    "company": "(Optional) Only if selected license is Corporate"
+    "company_name": "(Optional) Only if selected license is Corporate"
 }

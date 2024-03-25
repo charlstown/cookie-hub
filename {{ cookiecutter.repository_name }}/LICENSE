@@ -62,19 +62,19 @@ under certain conditions.
 
 
 {%- elif cookiecutter.license == "Corporate" -%}
-{{ cookiecutter.company }} Private License
+{{ cookiecutter.company_name }} Private License
 
-Copyright (c) {% now 'utc', '%Y' %} {{ cookiecutter.company }}
+Copyright (c) {% now 'utc', '%Y' %} {{ cookiecutter.company_name }}
 
 All rights reserved.
 
-The code in this project (the "Software") is the property of {{ cookiecutter.company }} (the "Company") and is protected by copyright law. The Software is intended solely for internal use by the company and its affiliates, and may not be used, copied, modified, or distributed without the express written permission of the company.
+The code in this project (the "Software") is the property of {{ cookiecutter.company_name }} (the "company_name") and is protected by copyright law. The Software is intended solely for internal use by the company_name and its affiliates, and may not be used, copied, modified, or distributed without the express written permission of the company_name.
 
-The Software is provided on an "as is" basis, without warranty of any kind, including without limitation the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the company or its affiliates be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use of other dealings in the software.
+The Software is provided on an "as is" basis, without warranty of any kind, including without limitation the warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the company_name or its affiliates be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use of other dealings in the software.
 
 the company reserves the right to modify this license at any time, and without notice, and such modification shall be effective immediately upon posting of the modified license.
 
-By using the Software, you agree to be bound by the terms of this license. This license constitutes the entire agreement between the company and the user relating to the use of the Software and supersedes all prior or contemporaneous understandings, communications, and agreements, whether written or oral, relating to such subject matter.
+By using the Software, you agree to be bound by the terms of this license. This license constitutes the entire agreement between the company_name and the user relating to the use of the Software and supersedes all prior or contemporaneous understandings, communications, and agreements, whether written or oral, relating to such subject matter.
 
 
 {%- elif cookiecutter.license == "Custom" -%}

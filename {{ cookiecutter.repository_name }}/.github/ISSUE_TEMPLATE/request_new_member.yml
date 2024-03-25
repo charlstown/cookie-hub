@@ -1,7 +1,7 @@
 name: Request new member
 description: Request the onboard of a new member/s to the Data Platform aplication
 title: "[Onboarding]: TYPE TITLE HERE"
-labels: ["kind/onboarding"]
+labels: ["[type] onboarding"]
 assignees:
   - n963309-sgt_sangroup
 body:

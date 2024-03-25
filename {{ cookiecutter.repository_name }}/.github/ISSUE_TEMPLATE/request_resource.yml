@@ -1,7 +1,7 @@
 name: Request resource
 description: Request new resources like repositories, jira boards, new branches, etc.
 title: "[Resource]: TYPE TITLE HERE"
-labels: ["kind/resource"]
+labels: ["[type] resource"]
 assignees:
   - n963309-sgt_sangroup
 body:

@@ -1,9 +1,8 @@
 name: Report incident
 description: Report any issues encountered while using the Data Platform tools available like Jira, Github, repositories, etc.
 title: "[Incident]: TYPE TITLE HERE"
-labels: ["kind/incident"]
-assignees:
-  - n963309-sgt_sangroup
+labels: ["[type] incident"]
+
 body:
 
   # Data component type

@@ -1,7 +1,7 @@
 name: Add requirement
 description: Add new requirements to our Data Platform Components as an external stakeholder.
 title: "[Requirement]: TYPE TITLE HERE"
-labels: ["kind/requirement"]
+labels: ["[type] requirement"]
 assignees:
   - n963309-sgt_sangroup
 body:

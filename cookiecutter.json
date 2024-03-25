@@ -5,7 +5,7 @@
     "repository_name": "{{ cookiecutter.project_name.strip().lower().replace(' ', '-') }}",
     "repository_url": "https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.repository_name }}",
     "maintainer": "@charlstown",
-    "maintainer-email": "maintainer@mail.com",
+    "maintainer_email": "maintainer@mail.com",
     "license": ["MIT", "Apache 2.0", "GNU General Public License", "Corporate", "Custom"],
     "company_name": "(Optional) Only if selected license is Corporate"
 }

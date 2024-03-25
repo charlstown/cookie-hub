@@ -55,7 +55,7 @@ Add new requirements to our Data Platform Components as an external stakeholder.
 
 Don't hesitate to contact any of the following members of the Data Platform Team:
 
-- [Carlos Grande](mailto:{{ cookiecutter.maintainer-email }}) · Extra support and very specific questions.
+- [{{ cookiecutter.maintainer }}](mailto:{{ cookiecutter.maintainer_email }}) · Extra support and very specific questions.
 
 
 ## 4. Other links

@@ -107,6 +107,31 @@ To generate a custom project from the template, follow these steps:
 
 **:fireworks::raised_hands: Congrats!! you have your project set and ready to roll.**
 
+
+## 2.2 [Optional] Generate custom labels
+
+We have two types of custom labels for this template, the __type__ and the __status__ of the issue. To create these labels yopu need to run the workflow named __`Create custom labels`__.
+
+- __`type`__: Contains the labels with the type of issue form selected, there is one per issue template.
+- __`status`__: Contains the labels with the different status of the issue.
+
+| Label name | color | Description |
+|-|-|-|
+| `[type] bug` | ![#E99695](https://placehold.co/10x10/E99695/E99695.png) `#E99695` | The group of issues opened as a bug type. |
+| `[type] incident` | ![#0052CC](https://placehold.co/10x10/0052CC/0052CC.png) `#0052CC` | The group of issues opened as an incident type. |
+| `[type] requirement` | ![#0052CC](https://placehold.co/10x10/0052CC/0052CC.png) `#0052CC` | The group of issues opened as a requirement type. |
+| `[type] resource` | ![#0052CC](https://placehold.co/10x10/0052CC/0052CC.png) `#0052CC` | The group of issues opened as a resource type. |
+| `[type] onboarding` | ![#0052CC](https://placehold.co/10x10/0052CC/0052CC.png) `#0052CC` | The group of issues opened as an onboarding type. |
+| `[status] review` | ![#0E8A16](https://placehold.co/10x10/0E8A16/0E8A16.png) `#0E8A16` | The group of issues that are under review. |
+| `[status] awaiting` | ![#FBCA04](https://placehold.co/10x10/FBCA04/FBCA04.png) `#FBCA04` | The group of issues that are awaiting a response from the user. |
+| `[status] bloqued` | ![#B60205](https://placehold.co/10x10/B60205/B60205.png) `#B60205` | The group of issues that are bloqued. |
+
+</br>
+
+> **Note**  
+> Feel free to add as many custom labels as you need for your project, and new group of labels like teams, organizations, etc. 
+
+
 </br>
 
 # 3. Usage

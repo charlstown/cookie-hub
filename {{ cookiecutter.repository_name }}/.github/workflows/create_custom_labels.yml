@@ -1,0 +1,34 @@
+name: Comment when opened
+on: workflow_dispatch
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          gh label create “[type] incident” \
+            --description "The group of issues opened as an incident type." \
+            --color 0052CC
+          gh label create “[type] requirement” \
+            --description "The group of issues opened as a requirement type." \
+            --color 0052CC
+          gh label create “[type] bug” \
+            --description "The group of issues opened as a bug type." \
+            --color E99695
+          gh label create “[type] onboarding \
+            --description "The group of issues opened as an onboarding type." \
+            --color 0052CC
+          gh label create “[type] resource \
+            --description "	The group of issues opened as a resource type." \
+            --color 0052CC
+          gh label create “[status] review” \
+            --description "The group of issues that are under review." \
+            --color 0E8A16
+          gh label create “[status] awaiting” \
+            --description "The group of issues that are awaiting a response from the user." \
+            --color FBCA04
+          gh label create “[status] bloqued” \
+            --description "The group of issues that are bloqued." \
+            --color B60205
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

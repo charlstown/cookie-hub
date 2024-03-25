@@ -7,5 +7,8 @@
     "maintainer": "@charlstown",
     "maintainer_email": "maintainer@mail.com",
     "license": ["MIT", "Apache 2.0", "GNU General Public License", "Corporate", "Custom"],
-    "company_name": "(Optional) Only if selected license is Corporate"
+    "company_name": "(Optional) Only if selected license is Corporate",
+    "_copy_without_render": [
+        ".github/*"
+    ]
 }
